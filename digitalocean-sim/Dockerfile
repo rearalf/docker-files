@@ -40,7 +40,7 @@ RUN export $(cat /home/developer/.env | xargs) && \
     sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE $POSTGRES_DB TO $POSTGRES_USER;"
 
 # Exponer puertos
-EXPOSE 22 80 5432
+EXPOSE 22 3000 80 5432
 
 # Establecer el comando por defecto
 CMD [ "/bin/bash" ]
