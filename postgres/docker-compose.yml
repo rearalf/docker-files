@@ -5,7 +5,7 @@ services:
     image: postgres
     container_name: ${CONTAINER_NAME}
     ports:
-      - "5433:5432"
+      - "5432:5432"
     environment:
       - DATABESE_HOST=${DB_HOST}
       - POSTGRES_USER=${DB_USER}
